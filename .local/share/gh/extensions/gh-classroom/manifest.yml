@@ -3,8 +3,4 @@ name: gh-classroom
 host: github.com
 tag: v0.1.13
 ispinned: false
-<<<<<<< HEAD
 path: /home/runner/KomplexKanban-V3-KrishSingh5/.local/share/gh/extensions/gh-classroom/gh-classroom
-=======
-path: /home/runner/KomplexKanban-V3-SawyerTPrescott/.local/share/gh/extensions/gh-classroom/gh-classroom
->>>>>>> c344d2f51c8614362652a9f85845190226243ddb

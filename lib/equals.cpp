@@ -1,0 +1,6 @@
+#include "Complex.h"
+#include "equals.h"
+
+bool operator==(const Complex& c1, const Complex& c2) {
+  return (c1.real == c2.real) && (c1.img == c2.img);
+}
