@@ -1,5 +1,5 @@
 #include "Complex.h"
 #include <cmath>
-double im(Complex b){
+double im(const Complex b){
     return b.img; 
 }
