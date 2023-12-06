@@ -1,7 +1,8 @@
 class Complex{
-    //testgit 
+    
+//testgit 
     double real;
     double img;    
     Complex(){img=0;real=0;}
-    Complex(double r, double i){real=r;img=i;}
+    public:Complex(double r, double i){real=r;img=i;}
 };

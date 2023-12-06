@@ -34,14 +34,14 @@ int main () {
 
     z1 += z2;
 
-    cout << "Complex number example: " << z1 << "\n";
-    cout << "The conjugate is: " << conj(z1) << "\n";
-    cout << "The magnitude is: " << abs(z1) << "\n";
-    cout << "The phase in Radians is: " << arg(z1) << "\n";
-    cout << "The norm is: " << norm(z1) << "\n";
-    cout << "The sqrt is: " << sqrt(z1) << "\n";
-    cout << "The natural log is: " << log(z1) << "\n";
-    cout << "The sin is: " << sin(z1) << "\n";
+    std::cout << "Complex number example: " << z1 << "\n";
+    std::cout << "The conjugate is: " << conj(z1) << "\n";
+    std::cout << "The magnitude is: " << abs(z1) << "\n";
+    std::cout << "The phase in Radians is: " << arg(z1) << "\n";
+    std::cout << "The norm is: " << norm(z1) << "\n";
+    std::cout << "The sqrt is: " << sqrt(z1) << "\n";
+    std::cout << "The natural log is: " << log(z1) << "\n";
+    std::cout << "The sin is: " << sin(z1) << "\n";
 
     /* other function testing */
     /*
