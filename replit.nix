@@ -1,5 +1,6 @@
 { pkgs }: {
 	deps = [
+   pkgs.nano
    pkgs.gh
 		pkgs.clang_12
 		pkgs.ccls

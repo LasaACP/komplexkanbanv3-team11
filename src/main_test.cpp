@@ -28,6 +28,40 @@ int main( int argc, char* argv[] ) {
 
 #else    //Not CATCH_AMALGAMATED_CUSTOM_MAIN
 
+TEST_CASE("Testing addition") {
+  cout << "running tests on addition" << endl;
+  REQUIRE(add(1,2) == 3);
+  REQUIRE(add(14,2) == 16);
+  REQUIRE(add(-1,2) == 1);
+}
+
+TEST_CASE("Testing subtraction") {
+  cout << "running tests on subtraction" << endl;
+  REQUIRE(sub(1,2) == -1);
+  REQUIRE(sub(14,2) == 12);
+  REQUIRE(sub(-4,3) == -7);
+}
+
+TEST_CASE("Testing multiplication") {
+  cout << "running tests on multiplication" << endl;
+  REQUIRE(mul(5,2) == 10);
+  REQUIRE(mul(0,5) == 0);
+  REQUIRE(mul(-1,2) == -2);
+}
+
+TEST_CASE("Testing division" ){
+  cout << "running tests on division" << endl;
+  REQUIRE(div(10,2) == 5);
+  REQUIRE(div(20,4) == 5);
+  REQUIRE(div(8,2) == 4);
+}
+
+TEST_CASE("Testing Logarithmic equation") {
+  cout << "running tests on Logarithmic equation" << endl;
+  REQUIRE(ln(0) == 1);
+  REQUIRE(ln());git co
+}
+
 TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
 {
 
