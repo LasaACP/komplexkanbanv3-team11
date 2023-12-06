@@ -1,6 +1,6 @@
 #include <cstdlib>
 #include <iostream>
-#include "Complex.h"
+#include "../lib/Complex.h"
 #include "fac.h"
 
 #define PI 3.1415926538979323846
