@@ -59,7 +59,7 @@ TEST_CASE("Testing division" ){
 TEST_CASE("Testing Logarithmic equation") {
   cout << "running tests on Logarithmic equation" << endl;
   REQUIRE(ln(0) == 1);
-  REQUIRE(ln());git co
+  REQUIRE(ln());git cogit pull
 }
 
 TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
