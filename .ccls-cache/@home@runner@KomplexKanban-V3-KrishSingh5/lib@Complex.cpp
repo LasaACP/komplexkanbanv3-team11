@@ -1,13 +1,10 @@
-class Complex{
-    //test
-    double real;
-    double img;    
-    Complex(){
+#include "Complex.h"
+
+    Complex::Complex(){
       img=0;
       real=0;
     }
-    Complex(double r, double i){
+    Complex::Complex(double r, double i){
       real=r;
       img=i;
     }
-};

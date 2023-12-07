@@ -27,7 +27,7 @@ using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
 
-int main( int argc, char* argv[] ) {
+int main_test( int argc, char* argv[] ) {
   // global setup...
 
   int result = Catch::Session().run( argc, argv );
@@ -40,7 +40,7 @@ int main( int argc, char* argv[] ) {
 
 #else    //Not CATCH_AMALGAMATED_CUSTOM_MAIN
 
-TEST_CASE("Addition Test", "[+]") {
+TEST_CASE("Addition Test", "[Add]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Addition" << endl;
   REQUIRE(Complex(1,2)+Complex(2,3) == Complex(3,5));
@@ -50,7 +50,7 @@ TEST_CASE("Addition Test", "[+]") {
   REQUIRE(Complex(1,0)+Complex(1,0) == Complex(2,0));
 }
 
-TEST_CASE("Multiplication Test", "[*]") {
+TEST_CASE("Multiplication Test", "[Multi]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Multiplication" << endl;
   REQUIRE(Complex(1,2)*Complex(1,2) == Complex(-3,4));
@@ -60,7 +60,7 @@ TEST_CASE("Multiplication Test", "[*]") {
   REQUIRE(Complex(10,-2)*Complex(5,-3) == Complex(44,-40));
 }
 
-TEST_CASE("Division Test", "[/]") {
+TEST_CASE("Division Test", "[Divis]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Division" << endl;
   REQUIRE(Complex(1,2)/Complex(1,2) == Complex(1,0));
@@ -70,7 +70,7 @@ TEST_CASE("Division Test", "[/]") {
   REQUIRE(Complex(10,-2)/Complex(5,-3) == Complex(1.64705882353,1.64705882353));
 }
 
-TEST_CASE("Absolute Value Test", "[||]") {
+TEST_CASE("Absolute Value Test", "[Abs]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Absolute Value" << endl;
   REQUIRE(abs(Complex(1,2)) == Complex(2.2360679775,0));
@@ -112,9 +112,9 @@ TEST_CASE("Exp Test", "[e^x]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on power of ℮" << endl;
   REQUIRE(exp(Complex(2,0)) == Complex(7.3890561,0));
-  REQUIRE(sqrt(Complex(0,4)) == Complex(-0.6536436,-0.7568025));
-  REQUIRE(sqrt(Complex(2,-2)) == Complex(-3.0749323,-6.7188496));
-  REQUIRE(sqrt(Complex(-3,-3)) == Complex(-0.0492888,-0.007026));
+  REQUIRE(exp(Complex(0,4)) == Complex(-0.6536436,-0.7568025));
+  REQUIRE(exp(Complex(2,-2)) == Complex(-3.0749323,-6.7188496));
+  REQUIRE(exp(Complex(-3,-3)) == Complex(-0.0492888,-0.007026));
 }
 
 TEST_CASE("Arg Test", "[arg]") {

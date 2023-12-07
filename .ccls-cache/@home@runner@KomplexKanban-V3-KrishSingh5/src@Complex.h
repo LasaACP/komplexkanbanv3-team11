@@ -1,8 +1,12 @@
-class Complex{
-    
-//testgit 
+#ifndef COMPLEX_H
+#define COMPLEX_H
+
+class Complex {
+  public:
     double real;
-    double img;    
-    Complex(){img=0;real=0;}
-    public:Complex(double r, double i){real=r;img=i;}
+    double img;
+    Complex();
+    Complex(double r, double i);
 };
+
+#endif

@@ -1,3 +1,3 @@
 #include "Complex.h"
 
-Complex arg(const Complex &, const Complex &);
+double arg(const Complex &);

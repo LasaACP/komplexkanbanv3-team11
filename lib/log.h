@@ -1,3 +1,3 @@
 #include "Complex.h"
 
-Complex log(const Complex &, const Complex &);
+Complex log(const Complex &);
