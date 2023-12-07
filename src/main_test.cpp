@@ -18,6 +18,11 @@
 #include "../lib/abs.h"
 #include "../lib/conj.h"
 #include "../lib/norm.h"
+#include "../lib/sqrt.h"
+#include "../lib/exp.h"
+#include "../lib/arg.h"
+#include "../lib/log.h"
+#include "../lib/sin.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -55,7 +60,7 @@ TEST_CASE("Multiplication Test", "[*]") {
   REQUIRE(Complex(10,-2)*Complex(5,-3) == Complex(44,-40));
 }
 
-TEST_CASE("Division Test", "/]") {
+TEST_CASE("Division Test", "[/]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Division" << endl;
   REQUIRE(Complex(1,2)/Complex(1,2) == Complex(1,0));
@@ -65,7 +70,7 @@ TEST_CASE("Division Test", "/]") {
   REQUIRE(Complex(10,-2)/Complex(5,-3) == Complex(1.64705882353,1.64705882353));
 }
 
-TEST_CASE("Absolute Value Test", "||]") {
+TEST_CASE("Absolute Value Test", "[||]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Absolute Value" << endl;
   REQUIRE(abs(Complex(1,2)) == Complex(2.2360679775,0));
@@ -75,7 +80,7 @@ TEST_CASE("Absolute Value Test", "||]") {
   REQUIRE(abs(Complex(-4,-3)) == Complex(5,0));
 }
 
-TEST_CASE("Conjugate Test", "conj]") {
+TEST_CASE("Conjugate Test", "[conj]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Conjugate" << endl;
   REQUIRE(conj(Complex(1,2)) == Complex(1,-2));
@@ -84,7 +89,7 @@ TEST_CASE("Conjugate Test", "conj]") {
   REQUIRE(conj(Complex(50.5,3.33)) == Complex(50.5,-3.33));
 }
 
-TEST_CASE("NORM Test", "norm]") {
+TEST_CASE("NORM Test", "[norm]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Norm" << endl;
   REQUIRE(norm(Complex(1,2)) == Complex(2.2360679775,0));
@@ -92,6 +97,51 @@ TEST_CASE("NORM Test", "norm]") {
   REQUIRE(norm(Complex(5,0)) == Complex(5,0));
   REQUIRE(norm(Complex(0,5)) == Complex(5,0));
   REQUIRE(norm(Complex(-4,-3)) == Complex(5,0));
+}
+
+TEST_CASE("Sqrt Test", "[sqrt]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on Square Root" << endl;
+  REQUIRE(sqrt(Complex(2,3)) == Complex(1.2247449,1.2247449));
+  REQUIRE(sqrt(Complex(4,0)) == Complex(2,0));
+  REQUIRE(sqrt(Complex(2,-2)) == Complex(1.553774,-0.6435943));
+  REQUIRE(sqrt(Complex(-3,-3)) == Complex(0.7882388,-1.9029767));
+}
+
+TEST_CASE("Exp Test", "[e^x]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on power of ℮" << endl;
+  REQUIRE(exp(Complex(2,0)) == Complex(7.3890561,0));
+  REQUIRE(sqrt(Complex(0,4)) == Complex(-0.6536436,-0.7568025));
+  REQUIRE(sqrt(Complex(2,-2)) == Complex(-3.0749323,-6.7188496));
+  REQUIRE(sqrt(Complex(-3,-3)) == Complex(-0.0492888,-0.007026));
+}
+
+TEST_CASE("Arg Test", "[arg]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on the angle of the complex number" << endl;
+  REQUIRE(arg(Complex(0,2)) == (1.570796));
+  REQUIRE(arg(Complex(4,0)) == (0));
+  REQUIRE(arg(Complex(9,2)) == (0.218669));
+  REQUIRE(arg(Complex(-2.5,-2.5)) == (-2.356194));
+}
+
+TEST_CASE("Sine Test", "[sin]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on the sine" << endl;
+   REQUIRE(sin(Complex(180,0)) == Complex(-0.8011526,0));
+   REQUIRE(sin(Complex(0,-5)) == Complex(0,-74.2032106));
+   REQUIRE(sin(Complex(3,-3)) == Complex(1.4207485,9.917621));
+   REQUIRE(sin(Complex(-1.5,-2.5)) == Complex(-6.116928,-0.4279745));
+}
+
+TEST_CASE("Natural Log Test", "[log]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on natural log" << endl;
+   REQUIRE(log(Complex(180,0)) == Complex(2.2552725,0));
+   REQUIRE(log(Complex(0,-5)) == Complex(0.69897,-0.6821882));
+   REQUIRE(log(Complex(3,-3)) == Complex(0.6276363,-0.3410941));
+   REQUIRE(log(Complex(-1.5,-2.5)) == Complex(0.4647095,-0.9168894));
 }
 
 // TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")

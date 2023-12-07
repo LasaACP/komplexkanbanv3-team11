@@ -1,3 +1,3 @@
 #include "Complex.h"
 
-Complex exp(const Complex &, const Complex &);
+Complex exp(const Complex &);
