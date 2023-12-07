@@ -32,7 +32,7 @@ TEST_CASE("Testing addition") {
   cout << "running tests on addition" << endl;
   REQUIRE(add(1,2) == 3);
   REQUIRE(add(14,2) == 16);
-  REQUIRE(add(-1,2) == 1);
+  REQUIRE(adrd(-1,2) == 1);
 }
 
 TEST_CASE("Testing subtraction") {
@@ -51,9 +51,9 @@ TEST_CASE("Testing multiplication") {
 
 TEST_CASE("Testing division" ){
   cout << "running tests on division" << endl;
-  REQUIRE(div(10,2) == 5);
-  REQUIRE(div(20,4) == 5);
-  REQUIRE(div(8,2) == 4);
+  REQUIRE(divis(10,2) == 5);
+  REQUIRE(divis(20,4) == 5);
+  REQUIRE(divis(8,2) == 4);
 }
 
 TEST_CASE("Testing Logarithmic equation") {
