@@ -1,5 +1,6 @@
 #include "Complex.h"
 #include <cmath>
+#include "itanh.h"
 #include "divis.cpp"
 
 Complex itanh(const Complex b){
