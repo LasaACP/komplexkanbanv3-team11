@@ -1,7 +1,7 @@
 #include "Complex.h"
 #include <cmath>
 #include "itanh.h"
-#include "divis.cpp"
+#include "divis.h"
 
 Complex itanh(const Complex b){
     Complex * c1 = new Complex(sinh(2*b.real),sin(2*b.img));

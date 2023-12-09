@@ -8,3 +8,8 @@
       real=r;
       img=i;
     }
+  
+    Complex::Complex(double r){
+    real=r;
+    img=0;
+    }
