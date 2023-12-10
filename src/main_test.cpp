@@ -75,11 +75,11 @@ TEST_CASE("Multiplication Test", "[Multi]") {
   cout << "Running tests on Complex Multiplication" << endl;
   double d = 3;
   REQUIRE(Complex(1,2)*Complex(1,2) == Complex(-3,4));
-  REQUIRE(Complex(1,-2)*Complex(1,2) == Complex(0,5));
+  REQUIRE(Complex(1,-2)*Complex(1,2) == Complex(5,0));
   REQUIRE(Complex(5,0)*Complex(0,2) == Complex(0,10));
   REQUIRE(Complex(1,0)*Complex(1,0) == Complex(1,0));
   REQUIRE(Complex(10,-2)*Complex(5,-3) ==     Complex(44,-40));
-  REQUIRE(Complex(1,0)*(d) == Complex(1,0));
+  REQUIRE(Complex(1,0)*(d) == Complex(3,0));
 }
 
 TEST_CASE("Division Test", "[Divis]") {
