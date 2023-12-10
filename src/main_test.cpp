@@ -28,6 +28,7 @@
 #include "../lib/itanh.h"
 #include "../lib/im.h"
 #include "../lib/sub.h"
+#include "../lib/inpo.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
