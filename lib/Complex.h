@@ -7,6 +7,7 @@ class Complex {
     double img;
     Complex();
     Complex(double r, double i);
+    Complex(double r);
 };
 
 #endif

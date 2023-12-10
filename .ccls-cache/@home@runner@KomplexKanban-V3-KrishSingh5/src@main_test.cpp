@@ -27,6 +27,8 @@
 #include "../lib/icosh.h"
 #include "../lib/itanh.h"
 #include "../lib/im.h"
+#include "../lib/sub.h"
+#include "../lib/inpo.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -47,31 +49,49 @@ int main_test( int argc, char* argv[] ) {
 TEST_CASE("Addition Test", "[Add]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Addition" << endl;
+  double d = 3;
   REQUIRE(Complex(1,2)+Complex(2,3) == Complex(3,5));
   REQUIRE(Complex(1,-2)+Complex(1,2) == Complex(2,0));
-  REQUIRE(Complex(1,2)+Complex(-2,3) == Complex(-1,0));
+  REQUIRE(Complex(1,2)+Complex(-2,3) == Complex(-1,5));
   REQUIRE(Complex(5,0)+Complex(0,2) == Complex(5,2));
   REQUIRE(Complex(1,0)+Complex(1,0) == Complex(2,0));
+  REQUIRE(Complex(1,0)+(d) == Complex(4,0));
+}
+
+TEST_CASE("Subtraction Test", "[Sub]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on Complex Subtraction" << endl;
+  double d = 3;
+  REQUIRE(Complex(1,2)-Complex(2,3) == Complex(-1,-1));
+  REQUIRE(Complex(1,-2)-Complex(1,2) == Complex(0,-4));
+  REQUIRE(Complex(1,2)-Complex(-2,3) == Complex(3,-1));
+  REQUIRE(Complex(5,0)-Complex(0,2) == Complex(5,-2));
+  REQUIRE(Complex(1,0)-Complex(1,0) == Complex(0,0));
+  REQUIRE(Complex(1,1)-(d) == Complex(-2,1));
 }
 
 TEST_CASE("Multiplication Test", "[Multi]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Multiplication" << endl;
+  double d = 3;
   REQUIRE(Complex(1,2)*Complex(1,2) == Complex(-3,4));
-  REQUIRE(Complex(1,-2)*Complex(1,2) == Complex(0,5));
+  REQUIRE(Complex(1,-2)*Complex(1,2) == Complex(5,0));
   REQUIRE(Complex(5,0)*Complex(0,2) == Complex(0,10));
   REQUIRE(Complex(1,0)*Complex(1,0) == Complex(1,0));
-  REQUIRE(Complex(10,-2)*Complex(5,-3) == Complex(44,-40));
+  REQUIRE(Complex(10,-2)*Complex(5,-3) ==     Complex(44,-40));
+  REQUIRE(Complex(1,0)*(d) == Complex(3,0));
 }
 
 TEST_CASE("Division Test", "[Divis]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Division" << endl;
+  double d = 1;
   REQUIRE(Complex(1,2)/Complex(1,2) == Complex(1,0));
-  REQUIRE(Complex(1,-2)/Complex(1,2) == Complex(-0.6,-0/8));
+  REQUIRE(Complex(1,-2)/Complex(1,2) == Complex(-0.6,-0.8));
   REQUIRE(Complex(5,0)/Complex(0,2) == Complex(0,-2.5));
   REQUIRE(Complex(0,8)/Complex(0,4) == Complex(0,2));
   REQUIRE(Complex(10,-2)/Complex(5,-3) == Complex(1.64705882353,1.64705882353));
+  REQUIRE(Complex(1,-2) / (d) == Complex(1,-2));
 }
 
 TEST_CASE("Absolute Value Test", "[Abs]") {
