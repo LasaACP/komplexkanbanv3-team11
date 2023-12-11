@@ -2,7 +2,9 @@
 #include "divis.h"
 
 Complex operator/(const Complex& c1, const Complex& c2) {
-  return Complex(c1.real/c2.real,c1.img/c2.img);
+  double real = ((c1.real*c2.real)+(c1.img + c2.img))/((c2.real*c2.real)+(c2.img*c2.img));
+  double image = ((c1.img*c2.real)-(c1.real * c2.img))/((c2.real*c2.real)+(c2.img*c2.img));
+  return Complex(real, image);
 }
 
 Complex operator/(const Complex& c1, const double& d) {

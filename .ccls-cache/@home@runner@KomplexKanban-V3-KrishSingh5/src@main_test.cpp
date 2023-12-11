@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
   Compile with: g++ main.cpp ../src/fac.cpp catch_amalgamated
@@ -180,7 +202,7 @@ TEST_CASE("Hyperbolic Sine Test", "[isinh]") {
 TEST_CASE("Hyperbolic Cosine Test", "[icosh]"){
     cout << "Hello Catch2 Build with Catch2 main()\n";
       cout << "Running tests on the hyperbolic cosine of the complex number" << endl;
-       REQUIRE(icosh(Complex(180,0)) == Complex(11.5919532755215,0));
+       REQUIRE(icosh(Complex(4,0)) == Complex(27.3082,0));
        REQUIRE(icosh(Complex(0,-5)) == Complex(0.996194,0));
        REQUIRE(icosh(Complex(3,-3)) == Complex(0.999998747,-0.002741556549));
        REQUIRE(icosh(Complex(-1.5,-2.5)) == Complex(0.99939061,0.0011420833));
