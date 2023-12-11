@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
   Compile with: g++ main.cpp ../src/fac.cpp catch_amalgamated
@@ -11,6 +33,7 @@
 #include <iostream>
 #include "../tests/catch_amalgamated.hpp"
 #include "../lib/Complex.h"
+
 #include "../lib/addition.h"
 #include "../lib/equals.h"
 #include "../lib/multi.h"
