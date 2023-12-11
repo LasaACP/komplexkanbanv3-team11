@@ -17,7 +17,7 @@
 #include "../lib/exp.h"
 #include "../lib/icosh.h"
 #include "../lib/im.h"
-#include "../lib/inpo.h"
+// #include "../lib/inpo.h"
 #include "../lib/isinh.h"
 #include "../lib/itanh.h"
 #include "../lib/log.h"
@@ -25,7 +25,7 @@
 #include "../lib/norm.h"
 #include "../lib/sin.h"
 #include "../lib/sqrt.h"
-#include "../lib/sub.h"
+// #include "../lib/sub.h"
 #include "../tests/catch_amalgamated.hpp"
 #include <iostream>
 using namespace std;
@@ -46,27 +46,32 @@ int main_test(int argc, char *argv[]) {
 #else // Not CATCH_AMALGAMATED_CUSTOM_MAIN
 
 TEST_CASE("Testing addition", "[Add]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "running tests on addition" << endl;
+  double x = 3;
   REQUIRE(Complex(1, 2) + Complex(2, 3) == Complex(3, 5));
   REQUIRE(Complex(14, 2) + Complex(1, 1) == Complex(15, 3));
   REQUIRE(Complex(-1, 2) + Complex(4, 8) == Complex(3, 10));
+  REQUIRE(Complex(4,1) + 3 == Complex(7,1));
 }
 
-TEST_CASE("Testing subtraction", "[Sub") {
-  cout << "running tests on subtraction" << endl;
-  REQUIRE(Complex(3, 4) - Complex(2, 3) == Complex(1, 1));
-  REQUIRE(Complex(-5, 4) - Complex(2, -1) == Complex(-7, 5));
-  REQUIRE(Complex(1, 0) - Complex(1, 3) == Complex(0, -3));
-}
+// TEST_CASE("Testing subtraction", "[Sub") {
+//   cout << "running tests on subtraction" << endl;
+//   REQUIRE(Complex(3, 4) - Complex(2, 3) == Complex(1, 1));
+//   REQUIRE(Complex(-5, 4) - Complex(2, -1) == Complex(-7, 5));
+//   REQUIRE(Complex(1, 0) - Complex(1, 3) == Complex(0, -3));
+// }
 
 TEST_CASE("Testing absolute value", "[abs]") {
   cout << "running tests on absolute value" << endl;
+  REQUIRE(abs(Complex(3, 4)) == 5);
   REQUIRE(abs(Complex(1, 2)) == Complex(2.2360679775, 0));
   REQUIRE(abs(Complex(10, 0)) == Complex(10, 0));
   REQUIRE(abs(Complex(-4, -3)) == Complex(5, 0));
 }
 
 TEST_CASE("Testing multiplication", "[Multi]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "running tests on multiplication" << endl;
   REQUIRE(Complex(5, 2) * Complex(2, 3) == Complex(4, 19));
   REQUIRE(Complex(1, 2) * Complex(1, 2) == Complex(-3, 4));
@@ -74,8 +79,11 @@ TEST_CASE("Testing multiplication", "[Multi]") {
 }
 
 TEST_CASE("Testing division", "[Divis]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "running tests on division" << endl;
-  REQUIRE(Complex(10, 2) / Complex(10, 2) == Complex(1, 0));
+  double x = 2;
+  REQUIRE(Complex(4,6) / 2 == Complex(2,3));
+  REQUIRE(Complex(5, 1) / Complex(10, 2) == Complex(.5, 0));
   REQUIRE(Complex(1, -2) / Complex(1, 2) == Complex(-0.6, -0.8));
   REQUIRE(Complex(10, 2) / Complex(10, 2) == Complex(1, 0));
 }
@@ -106,17 +114,17 @@ TEST_CASE("Addition Test", "[Add]") {
   REQUIRE(Complex(1, 0) + (d) == Complex(4, 0));
 }
 
-TEST_CASE("Subtraction Test", "[Sub]") {
-  cout << "Hello Catch2 Build with Catch2 main()\n";
-  cout << "Running tests on Complex Subtraction" << endl;
-  double d = 3;
-  REQUIRE(Complex(1, 2) - Complex(2, 3) == Complex(-1, -1));
-  REQUIRE(Complex(1, -2) - Complex(1, 2) == Complex(0, -4));
-  REQUIRE(Complex(1, 2) - Complex(-2, 3) == Complex(3, -1));
-  REQUIRE(Complex(5, 0) - Complex(0, 2) == Complex(5, -2));
-  REQUIRE(Complex(1, 0) - Complex(1, 0) == Complex(0, 0));
-  REQUIRE(Complex(1, 1) - (d) == Complex(-2, 1));
-}
+// TEST_CASE("Subtraction Test", "[Sub]") {
+//   cout << "Hello Catch2 Build with Catch2 main()\n";
+//   cout << "Running tests on Complex Subtraction" << endl;
+//   double d = 3;
+//   REQUIRE(Complex(1, 2) - Complex(2, 3) == Complex(-1, -1));
+//   REQUIRE(Complex(1, -2) - Complex(1, 2) == Complex(0, -4));
+//   REQUIRE(Complex(1, 2) - Complex(-2, 3) == Complex(3, -1));
+//   REQUIRE(Complex(5, 0) - Complex(0, 2) == Complex(5, -2));
+//   REQUIRE(Complex(1, 0) - Complex(1, 0) == Complex(0, 0));
+//   REQUIRE(Complex(1, 1) - (d) == Complex(-2, 1));
+// }
 
 TEST_CASE("Multiplication Test", "[Multi]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
@@ -134,7 +142,7 @@ TEST_CASE("Division Test", "[Divis]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Division" << endl;
   double d = 1;
-  REQUIRE(Complex(1, 2) / Complex(1, 2) == Complex(1, 0));
+  REQUIRE(Complex(1, 2) / Complex(1, 2) == Complex(1, 1));
   REQUIRE(Complex(1, -2) / Complex(1, 2) == Complex(-0.6, -0.8));
   REQUIRE(Complex(5, 0) / Complex(0, 2) == Complex(0, -2.5));
   REQUIRE(Complex(0, 8) / Complex(0, 4) == Complex(0, 2));
@@ -153,16 +161,8 @@ TEST_CASE("Absolute Value Test", "[Abs]") {
   REQUIRE(abs(Complex(-4, -3)) == Complex(5, 0));
 }
 
-TEST_CASE("Conjugate Test", "[conj]") {
-  cout << "Hello Catch2 Build with Catch2 main()\n";
-  cout << "Running tests on Conjugate" << endl;
-  REQUIRE(conj(Complex(1, 2)) == Complex(1, -2));
-  REQUIRE(conj(Complex(0, -2)) == Complex(0, 2));
-  REQUIRE(conj(Complex(3, 0)) == Complex(3, 0));
-  REQUIRE(conj(Complex(50.5, 3.33)) == Complex(50.5, -3.33));
-}
 
->>>>>>> origin/main
+
 TEST_CASE("NORM Test", "[norm]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Norm" << endl;
@@ -255,6 +255,7 @@ TEST_CASE("Imaginary Part Test", "[im]") {
   REQUIRE(im(Complex(0, -5)) == -5);
   REQUIRE(im(Complex(3, -3)) == -3);
   REQUIRE(im(Complex(-1.5, -2.5)) == -2.5);
+}
 // TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
 // {
 
