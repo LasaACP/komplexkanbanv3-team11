@@ -2,7 +2,6 @@ CMakeFiles/MyProgram.dir/lib/inpo.cpp.o: \
  /home/runner/KomplexKanban-V3-KrishSingh5/lib/inpo.cpp \
  /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdc-predef.h \
  /home/runner/KomplexKanban-V3-KrishSingh5/lib/Complex.h \
- /home/runner/KomplexKanban-V3-KrishSingh5/lib/inpo.h \
  /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/iostream \
  /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/x86_64-unknown-linux-gnu/bits/c++config.h \
  /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/x86_64-unknown-linux-gnu/bits/os_defines.h \
@@ -187,4 +186,5 @@ CMakeFiles/MyProgram.dir/lib/inpo.cpp.o: \
  /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/bits/basic_ios.tcc \
  /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/bits/ostream.tcc \
  /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/istream \
- /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/bits/istream.tcc
+ /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/bits/istream.tcc \
+ /home/runner/KomplexKanban-V3-KrishSingh5/lib/inpo.h

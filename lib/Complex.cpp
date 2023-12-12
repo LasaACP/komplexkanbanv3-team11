@@ -14,12 +14,3 @@
     img=0;
     }
     
-    std::ostream& operator<<(std::ostream& os, const Complex& c) {
-        os << c.real << " + " << c.img << "i";
-        return os;
-    }
-    
-    std::istream& operator>>(std::istream& is, Complex& c) {
-        is >> c.real >> c.img;
-        return is;
-    }
