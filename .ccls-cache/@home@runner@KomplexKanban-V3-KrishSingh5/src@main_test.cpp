@@ -187,7 +187,7 @@ TEST_CASE("Hyperbolic Sine Test", "[isinh]") {
        REQUIRE(isinh(Complex(180,0)) == Complex(11.5487,0));
        REQUIRE(isinh(Complex(0,-5)) == Complex(0,0.0874));
        REQUIRE(isinh(Complex(3,-3)) == Complex(0.0523,0.0523));
-       REQUIRE(isinh(Complex(-1.5,-2.5)) == Complex(-0.0262,-0.04363));
+       REQUIRE(isinh(Complex(-1.5,-2.5)) == Complex(-0.0262,-0.0436));
 }
 
 TEST_CASE("Hyperbolic Cosine Test", "[icosh]"){
