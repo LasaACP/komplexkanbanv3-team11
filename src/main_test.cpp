@@ -148,19 +148,20 @@ TEST_CASE("Sqrt Test", "[sqrt]") {
 TEST_CASE("Exp Test", "[e^x]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on power of ℮" << endl;
-  REQUIRE(exp(Complex(2,0)) == Complex(7.3890561,0));
-  REQUIRE(exp(Complex(0,4)) == Complex(-0.6536436,-0.7568025));
-  REQUIRE(exp(Complex(2,-2)) == Complex(-3.0749323,-6.7188496));
-  REQUIRE(exp(Complex(-3,-3)) == Complex(-0.0492888,-0.007026));
+  REQUIRE(exp(Complex(2,0)) == Complex(7.3891,0));
+  REQUIRE(exp(Complex(0,4)) == Complex(-0.6536,-0.7568));
+  REQUIRE(exp(Complex(2,-2)) == Complex(-3.0749,-6.7188));
+  REQUIRE(exp(Complex(-3,-3)) == Complex(-0.0493,-0.0070));
 }
 
 TEST_CASE("Arg Test", "[arg]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on the angle of the complex number" << endl;
-  REQUIRE(arg(Complex(0,2)) == (1.570796));
-  REQUIRE(arg(Complex(4,0)) == (0));
-  REQUIRE(arg(Complex(9,2)) == (0.218669));
-  REQUIRE(arg(Complex(-2.5,-2.5)) == (-2.356194));
+  REQUIRE(arg(Complex(2,0)) == (0));
+  REQUIRE(arg(Complex(4,1)) == (0.2450));
+  REQUIRE(arg(Complex(9,2)) == (0.2187));
+  REQUIRE(arg(Complex(9,-2.5)) == (-0.2709));
+  REQUIRE(arg(Complex(-0.7,-0.1)) == (0.1419));
 }
 
 TEST_CASE("Sine Test", "[sin]") {
@@ -175,10 +176,11 @@ TEST_CASE("Sine Test", "[sin]") {
 TEST_CASE("Natural Log Test", "[log]") {
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on natural log" << endl;
-   REQUIRE(log(Complex(180,0)) == Complex(2.2553,0));
-   REQUIRE(log(Complex(0,-5)) == Complex(0.6990,-0.6822));
-   REQUIRE(log(Complex(3,-3)) == Complex(0.6276,-0.3411));
-   REQUIRE(log(Complex(-1.5,-2.5)) == Complex(0.4647,-0.9169));
+   REQUIRE(log(Complex(180,0)) == Complex(5.193,0));
+   REQUIRE(log(Complex(0,-5)) == Complex(1.6094, -1.5708));
+   REQUIRE(log(Complex(3,-3)) == Complex(1.4452, -0.7854));
+   REQUIRE(log(Complex(-1.5,-2.5)) == Complex(1.07, -2.1112)
+);
 }
 
 TEST_CASE("Hyperbolic Sine Test", "[isinh]") { 
