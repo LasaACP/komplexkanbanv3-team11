@@ -186,10 +186,12 @@ TEST_CASE("Natural Log Test", "[log]") {
 TEST_CASE("Hyperbolic Sine Test", "[isinh]") { 
       cout << "Hello Catch2 Build with Catch2 main()\n";
       cout << "Running tests on the hyperbolic sine of the complex number" << endl;
-       REQUIRE(isinh(Complex(180,0)) == Complex(11.5487,0));
-       REQUIRE(isinh(Complex(0,-5)) == Complex(0,0.0874));
-       REQUIRE(isinh(Complex(3,-3)) == Complex(0.0523,0.0523));
-       REQUIRE(isinh(Complex(-1.5,-2.5)) == Complex(-0.0262,-0.0436));
+       REQUIRE(isinh(Complex(4,0)) == Complex(27.2899,0));
+       REQUIRE(isinh(Complex(0,-5)) == Complex(0, 0.9589)
+);
+       REQUIRE(isinh(Complex(3,-3)) == Complex(-9.9176, -1.4207));
+       REQUIRE(isinh(Complex(-1.5,-2.5)) == Complex(1.7059, -1.4079)
+);
 }
 
 TEST_CASE("Hyperbolic Cosine Test", "[icosh]"){
@@ -204,10 +206,13 @@ TEST_CASE("Hyperbolic Cosine Test", "[icosh]"){
 TEST_CASE("Hyperbolic Tangent Test", "[itanh]"){
     cout << "Hello Catch2 Build with Catch2 main()\n";
       cout << "Running tests on the hyperbolic cosine of the complex number" << endl;
-       REQUIRE(itanh(Complex(180,0)) == Complex(0,0));
-       REQUIRE(itanh(Complex(0,-5)) == Complex(0,-0.08749));
-       REQUIRE(itanh(Complex(3,-3)) == Complex(0.05246,-0.05246));
-       REQUIRE(itanh(Complex(-1.5,-2.5)) == Complex(-0.0697,0));
+       REQUIRE(itanh(Complex(4,0)) == Complex(0.9993, 0)
+);
+       REQUIRE(itanh(Complex(0,-5)) == Complex(0, 3.3805));
+       REQUIRE(itanh(Complex(3,-3)) == Complex(0.9953, 0.0014)
+);
+       REQUIRE(itanh(Complex(-1.5,-2.5)) == Complex(-0.9678, 0.0926)
+);
 }
 
 TEST_CASE("Imaginary Part Test", "[im]"){

@@ -2669,7 +2669,9 @@ CMakeFiles/MyProgram.dir/lib/itanh.cpp.o: /home/runner/KomplexKanban-V3-KrishSin
   /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/tr1/poly_laguerre.tcc \
   /nix/store/1gf2flfqnpqbr1b4p4qz2f72y42bs56r-gcc-11.3.0/include/c++/11.3.0/tr1/riemann_zeta.tcc \
   /home/runner/KomplexKanban-V3-KrishSingh5/lib/itanh.h \
-  /home/runner/KomplexKanban-V3-KrishSingh5/lib/divis.h
+  /home/runner/KomplexKanban-V3-KrishSingh5/lib/divis.h \
+  /home/runner/KomplexKanban-V3-KrishSingh5/lib/icosh.h \
+  /home/runner/KomplexKanban-V3-KrishSingh5/lib/isinh.h
 
 CMakeFiles/MyProgram.dir/lib/log.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/lib/log.cpp \
   /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdc-predef.h \

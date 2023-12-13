@@ -2,10 +2,12 @@
 #include <cmath>
 #include "itanh.h"
 #include "divis.h"
+#include "icosh.h"
+#include "isinh.h"
 
 Complex itanh(const Complex b){
-    Complex * c1 = new Complex(sinh(2*b.real),sin(2*b.img));
-    c1->real = c1->real/(cosh(2*b.real)+cos(2*b.img));
-    c1->img = c1->img/(cosh(2*b.real)+cos(2*b.img));
-    return *c1;
+    Complex v = isinh(b,1)/icosh(b,1);
+    double real = (v.real * 10000)/10000;
+    double image = (v.img * 10000)/10000;
+    return Complex(real,image);
 }
