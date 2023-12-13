@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/runner/KomplexKanban-V3-KrishSingh5/lib/log.cpp" "CMakeFiles/MyProgram.dir/lib/log.cpp.o" "gcc" "CMakeFiles/MyProgram.dir/lib/log.cpp.o.d"
   "/home/runner/KomplexKanban-V3-KrishSingh5/lib/multi.cpp" "CMakeFiles/MyProgram.dir/lib/multi.cpp.o" "gcc" "CMakeFiles/MyProgram.dir/lib/multi.cpp.o.d"
   "/home/runner/KomplexKanban-V3-KrishSingh5/lib/norm.cpp" "CMakeFiles/MyProgram.dir/lib/norm.cpp.o" "gcc" "CMakeFiles/MyProgram.dir/lib/norm.cpp.o.d"
+  "/home/runner/KomplexKanban-V3-KrishSingh5/lib/polar.cpp" "CMakeFiles/MyProgram.dir/lib/polar.cpp.o" "gcc" "CMakeFiles/MyProgram.dir/lib/polar.cpp.o.d"
   "/home/runner/KomplexKanban-V3-KrishSingh5/lib/real.cpp" "CMakeFiles/MyProgram.dir/lib/real.cpp.o" "gcc" "CMakeFiles/MyProgram.dir/lib/real.cpp.o.d"
   "/home/runner/KomplexKanban-V3-KrishSingh5/lib/sin.cpp" "CMakeFiles/MyProgram.dir/lib/sin.cpp.o" "gcc" "CMakeFiles/MyProgram.dir/lib/sin.cpp.o.d"
   "/home/runner/KomplexKanban-V3-KrishSingh5/lib/sqrt.cpp" "CMakeFiles/MyProgram.dir/lib/sqrt.cpp.o" "gcc" "CMakeFiles/MyProgram.dir/lib/sqrt.cpp.o.d"

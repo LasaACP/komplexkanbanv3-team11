@@ -601,6 +601,33 @@ lib/norm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMain.dir/build.make CMakeFiles/MyMain.dir/lib/norm.cpp.s
 .PHONY : lib/norm.cpp.s
 
+lib/polar.o: lib/polar.cpp.o
+.PHONY : lib/polar.o
+
+# target to build an object file
+lib/polar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProgram.dir/build.make CMakeFiles/MyProgram.dir/lib/polar.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMain.dir/build.make CMakeFiles/MyMain.dir/lib/polar.cpp.o
+.PHONY : lib/polar.cpp.o
+
+lib/polar.i: lib/polar.cpp.i
+.PHONY : lib/polar.i
+
+# target to preprocess a source file
+lib/polar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProgram.dir/build.make CMakeFiles/MyProgram.dir/lib/polar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMain.dir/build.make CMakeFiles/MyMain.dir/lib/polar.cpp.i
+.PHONY : lib/polar.cpp.i
+
+lib/polar.s: lib/polar.cpp.s
+.PHONY : lib/polar.s
+
+# target to generate assembly for a file
+lib/polar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProgram.dir/build.make CMakeFiles/MyProgram.dir/lib/polar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyMain.dir/build.make CMakeFiles/MyMain.dir/lib/polar.cpp.s
+.PHONY : lib/polar.cpp.s
+
 lib/real.o: lib/real.cpp.o
 .PHONY : lib/real.o
 
@@ -1004,6 +1031,9 @@ help:
 	@echo "... lib/norm.o"
 	@echo "... lib/norm.i"
 	@echo "... lib/norm.s"
+	@echo "... lib/polar.o"
+	@echo "... lib/polar.i"
+	@echo "... lib/polar.s"
 	@echo "... lib/real.o"
 	@echo "... lib/real.i"
 	@echo "... lib/real.s"

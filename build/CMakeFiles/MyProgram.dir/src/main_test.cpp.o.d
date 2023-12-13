@@ -315,4 +315,5 @@ CMakeFiles/MyProgram.dir/src/main_test.cpp.o: \
  /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/pow.h \
  /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/cos.h \
  /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/tan.h \
- /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/atrigbundle.h
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/atrigbundle.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../lib/polar.h

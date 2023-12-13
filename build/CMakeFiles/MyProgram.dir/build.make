@@ -363,10 +363,24 @@ CMakeFiles/MyProgram.dir/lib/real.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProgram.dir/lib/real.cpp.s"
 	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/KomplexKanban-V3-KrishSingh5/lib/real.cpp -o CMakeFiles/MyProgram.dir/lib/real.cpp.s
 
+CMakeFiles/MyProgram.dir/lib/polar.cpp.o: CMakeFiles/MyProgram.dir/flags.make
+CMakeFiles/MyProgram.dir/lib/polar.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/lib/polar.cpp
+CMakeFiles/MyProgram.dir/lib/polar.cpp.o: CMakeFiles/MyProgram.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/MyProgram.dir/lib/polar.cpp.o"
+	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProgram.dir/lib/polar.cpp.o -MF CMakeFiles/MyProgram.dir/lib/polar.cpp.o.d -o CMakeFiles/MyProgram.dir/lib/polar.cpp.o -c /home/runner/KomplexKanban-V3-KrishSingh5/lib/polar.cpp
+
+CMakeFiles/MyProgram.dir/lib/polar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProgram.dir/lib/polar.cpp.i"
+	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/KomplexKanban-V3-KrishSingh5/lib/polar.cpp > CMakeFiles/MyProgram.dir/lib/polar.cpp.i
+
+CMakeFiles/MyProgram.dir/lib/polar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProgram.dir/lib/polar.cpp.s"
+	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/KomplexKanban-V3-KrishSingh5/lib/polar.cpp -o CMakeFiles/MyProgram.dir/lib/polar.cpp.s
+
 CMakeFiles/MyProgram.dir/lib/inequals.cpp.o: CMakeFiles/MyProgram.dir/flags.make
 CMakeFiles/MyProgram.dir/lib/inequals.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/lib/inequals.cpp
 CMakeFiles/MyProgram.dir/lib/inequals.cpp.o: CMakeFiles/MyProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/MyProgram.dir/lib/inequals.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/MyProgram.dir/lib/inequals.cpp.o"
 	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProgram.dir/lib/inequals.cpp.o -MF CMakeFiles/MyProgram.dir/lib/inequals.cpp.o.d -o CMakeFiles/MyProgram.dir/lib/inequals.cpp.o -c /home/runner/KomplexKanban-V3-KrishSingh5/lib/inequals.cpp
 
 CMakeFiles/MyProgram.dir/lib/inequals.cpp.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/MyProgram.dir/lib/inequals.cpp.s: cmake_force
 CMakeFiles/MyProgram.dir/nlib/log10.cpp.o: CMakeFiles/MyProgram.dir/flags.make
 CMakeFiles/MyProgram.dir/nlib/log10.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/nlib/log10.cpp
 CMakeFiles/MyProgram.dir/nlib/log10.cpp.o: CMakeFiles/MyProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/MyProgram.dir/nlib/log10.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/MyProgram.dir/nlib/log10.cpp.o"
 	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProgram.dir/nlib/log10.cpp.o -MF CMakeFiles/MyProgram.dir/nlib/log10.cpp.o.d -o CMakeFiles/MyProgram.dir/nlib/log10.cpp.o -c /home/runner/KomplexKanban-V3-KrishSingh5/nlib/log10.cpp
 
 CMakeFiles/MyProgram.dir/nlib/log10.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/MyProgram.dir/nlib/log10.cpp.s: cmake_force
 CMakeFiles/MyProgram.dir/nlib/root.cpp.o: CMakeFiles/MyProgram.dir/flags.make
 CMakeFiles/MyProgram.dir/nlib/root.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/nlib/root.cpp
 CMakeFiles/MyProgram.dir/nlib/root.cpp.o: CMakeFiles/MyProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/MyProgram.dir/nlib/root.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/MyProgram.dir/nlib/root.cpp.o"
 	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProgram.dir/nlib/root.cpp.o -MF CMakeFiles/MyProgram.dir/nlib/root.cpp.o.d -o CMakeFiles/MyProgram.dir/nlib/root.cpp.o -c /home/runner/KomplexKanban-V3-KrishSingh5/nlib/root.cpp
 
 CMakeFiles/MyProgram.dir/nlib/root.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/MyProgram.dir/nlib/root.cpp.s: cmake_force
 CMakeFiles/MyProgram.dir/nlib/pow.cpp.o: CMakeFiles/MyProgram.dir/flags.make
 CMakeFiles/MyProgram.dir/nlib/pow.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/nlib/pow.cpp
 CMakeFiles/MyProgram.dir/nlib/pow.cpp.o: CMakeFiles/MyProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/MyProgram.dir/nlib/pow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/MyProgram.dir/nlib/pow.cpp.o"
 	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProgram.dir/nlib/pow.cpp.o -MF CMakeFiles/MyProgram.dir/nlib/pow.cpp.o.d -o CMakeFiles/MyProgram.dir/nlib/pow.cpp.o -c /home/runner/KomplexKanban-V3-KrishSingh5/nlib/pow.cpp
 
 CMakeFiles/MyProgram.dir/nlib/pow.cpp.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/MyProgram.dir/nlib/pow.cpp.s: cmake_force
 CMakeFiles/MyProgram.dir/nlib/cos.cpp.o: CMakeFiles/MyProgram.dir/flags.make
 CMakeFiles/MyProgram.dir/nlib/cos.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/nlib/cos.cpp
 CMakeFiles/MyProgram.dir/nlib/cos.cpp.o: CMakeFiles/MyProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/MyProgram.dir/nlib/cos.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/MyProgram.dir/nlib/cos.cpp.o"
 	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProgram.dir/nlib/cos.cpp.o -MF CMakeFiles/MyProgram.dir/nlib/cos.cpp.o.d -o CMakeFiles/MyProgram.dir/nlib/cos.cpp.o -c /home/runner/KomplexKanban-V3-KrishSingh5/nlib/cos.cpp
 
 CMakeFiles/MyProgram.dir/nlib/cos.cpp.i: cmake_force
@@ -436,7 +450,7 @@ CMakeFiles/MyProgram.dir/nlib/cos.cpp.s: cmake_force
 CMakeFiles/MyProgram.dir/nlib/tan.cpp.o: CMakeFiles/MyProgram.dir/flags.make
 CMakeFiles/MyProgram.dir/nlib/tan.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/nlib/tan.cpp
 CMakeFiles/MyProgram.dir/nlib/tan.cpp.o: CMakeFiles/MyProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/MyProgram.dir/nlib/tan.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/MyProgram.dir/nlib/tan.cpp.o"
 	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProgram.dir/nlib/tan.cpp.o -MF CMakeFiles/MyProgram.dir/nlib/tan.cpp.o.d -o CMakeFiles/MyProgram.dir/nlib/tan.cpp.o -c /home/runner/KomplexKanban-V3-KrishSingh5/nlib/tan.cpp
 
 CMakeFiles/MyProgram.dir/nlib/tan.cpp.i: cmake_force
@@ -450,7 +464,7 @@ CMakeFiles/MyProgram.dir/nlib/tan.cpp.s: cmake_force
 CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.o: CMakeFiles/MyProgram.dir/flags.make
 CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/nlib/atrigbundle.cpp
 CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.o: CMakeFiles/MyProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.o"
 	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.o -MF CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.o.d -o CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.o -c /home/runner/KomplexKanban-V3-KrishSingh5/nlib/atrigbundle.cpp
 
 CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.i: cmake_force
@@ -464,7 +478,7 @@ CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.s: cmake_force
 CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.o: CMakeFiles/MyProgram.dir/flags.make
 CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.o: /home/runner/KomplexKanban-V3-KrishSingh5/tests/catch_amalgamated.cpp
 CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.o: CMakeFiles/MyProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.o"
 	/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.o -MF CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.o.d -o CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.o -c /home/runner/KomplexKanban-V3-KrishSingh5/tests/catch_amalgamated.cpp
 
 CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.i: cmake_force
@@ -498,6 +512,7 @@ MyProgram_OBJECTS = \
 "CMakeFiles/MyProgram.dir/lib/im.cpp.o" \
 "CMakeFiles/MyProgram.dir/lib/inpo.cpp.o" \
 "CMakeFiles/MyProgram.dir/lib/real.cpp.o" \
+"CMakeFiles/MyProgram.dir/lib/polar.cpp.o" \
 "CMakeFiles/MyProgram.dir/lib/inequals.cpp.o" \
 "CMakeFiles/MyProgram.dir/nlib/log10.cpp.o" \
 "CMakeFiles/MyProgram.dir/nlib/root.cpp.o" \
@@ -531,6 +546,7 @@ MyProgram: CMakeFiles/MyProgram.dir/lib/sub.cpp.o
 MyProgram: CMakeFiles/MyProgram.dir/lib/im.cpp.o
 MyProgram: CMakeFiles/MyProgram.dir/lib/inpo.cpp.o
 MyProgram: CMakeFiles/MyProgram.dir/lib/real.cpp.o
+MyProgram: CMakeFiles/MyProgram.dir/lib/polar.cpp.o
 MyProgram: CMakeFiles/MyProgram.dir/lib/inequals.cpp.o
 MyProgram: CMakeFiles/MyProgram.dir/nlib/log10.cpp.o
 MyProgram: CMakeFiles/MyProgram.dir/nlib/root.cpp.o
@@ -541,7 +557,7 @@ MyProgram: CMakeFiles/MyProgram.dir/nlib/atrigbundle.cpp.o
 MyProgram: CMakeFiles/MyProgram.dir/tests/catch_amalgamated.cpp.o
 MyProgram: CMakeFiles/MyProgram.dir/build.make
 MyProgram: CMakeFiles/MyProgram.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable MyProgram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/runner/KomplexKanban-V3-KrishSingh5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable MyProgram"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProgram.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

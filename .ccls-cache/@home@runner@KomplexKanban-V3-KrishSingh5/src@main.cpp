@@ -27,6 +27,7 @@
 #include "../nlib/cos.h"
 #include "../nlib/tan.h"
 #include "../nlib/atrigbundle.h"
+#include "../lib/polar.h"
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
 #include <string>

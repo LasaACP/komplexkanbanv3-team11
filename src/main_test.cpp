@@ -48,6 +48,7 @@
 #include "../nlib/cos.h"
 #include "../nlib/tan.h"
 #include "../nlib/atrigbundle.h"
+#include "../lib/polar.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -238,6 +239,14 @@ TEST_CASE("Real Part Test", "[re]"){
        REQUIRE(real(Complex(0,-5)) == 0);
        REQUIRE(real(Complex(3,-3)) == 3);
        REQUIRE(real(Complex(-1.5,-2.5)) == -1.5);
+}
+
+  TEST_CASE("Polar to Complex Test", "[plr]"){
+    cout << "Hello Catch2 Build with Catch2 main()\n";
+      cout << "Running tests on converting polar to complex" << endl;
+       REQUIRE(polar(10,3) == Complex(-9.8999,1.4112));
+       REQUIRE(polar(4,6.15) == Complex(3.9646,-0.5312));
+       REQUIRE(polar(3,2.4248) == Complex(-2.2618,1.9709));
 }
 // TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
 // {

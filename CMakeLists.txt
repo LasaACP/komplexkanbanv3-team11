@@ -45,6 +45,8 @@ add_executable(MyProgram
   ../lib/inpo.h
   ../lib/real.cpp
   ../lib/real.h
+  ../lib/polar.cpp
+  ../lib/polar.h
   ../lib/inequals.cpp
   ../lib/inequals.h
   ../nlib/log10.cpp
@@ -120,4 +122,6 @@ add_executable(MyMain
   ../nlib/cos.cpp
   ../nlib/tan.cpp
   ../nlib/atrigbundle.cpp
+  ../lib/polar.cpp
+  ../lib/polar.h
 )

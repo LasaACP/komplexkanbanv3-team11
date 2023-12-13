@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyProgram.dir/lib/multi.cpp.o.d"
   "CMakeFiles/MyProgram.dir/lib/norm.cpp.o"
   "CMakeFiles/MyProgram.dir/lib/norm.cpp.o.d"
+  "CMakeFiles/MyProgram.dir/lib/polar.cpp.o"
+  "CMakeFiles/MyProgram.dir/lib/polar.cpp.o.d"
   "CMakeFiles/MyProgram.dir/lib/real.cpp.o"
   "CMakeFiles/MyProgram.dir/lib/real.cpp.o.d"
   "CMakeFiles/MyProgram.dir/lib/sin.cpp.o"
