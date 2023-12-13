@@ -63,7 +63,7 @@ int main () {
 
     std::cout << "Complex number example: " << z1 << "\n";
     std::cout << "The conjugate is: " << conj(z1) << "\n";
-    std::cout << "The magnitude is: " << abs(z1) << "\n";
+    std::cout << "The magnitude  is: " << abs(z1) << "\n";
     std::cout << "The phase in Radians is: " << arg(z1) << "\n";
     std::cout << "The norm is: " << norm(z1) << "\n";
     std::cout << "The sqrt is: " << sqrt(z1) << "\n";

@@ -45,4 +45,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MyProgram.dir/DependInfo.cmake"
   "CMakeFiles/MyMain.dir/DependInfo.cmake"
+  "CMakeFiles/MyValid.dir/DependInfo.cmake"
   )
