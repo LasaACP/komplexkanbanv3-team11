@@ -8,6 +8,6 @@ Complex operator+(const Complex& c1, const double& d) {
   return Complex(c1.real+d,c1.img);
 }
 
-Complex operator+(const double& l, Complex& c1) {
+Complex operator+(const double l, Complex c1) {
   return Complex(c1.real+l,c1.img);
 }

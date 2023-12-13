@@ -22,7 +22,6 @@
 #include <iostream>
 #include "../tests/catch_amalgamated.hpp"
 #include "../lib/Complex.h"
-
 #include "../lib/addition.h"
 #include "../lib/equals.h"
 #include "../lib/multi.h"
@@ -41,6 +40,14 @@
 #include "../lib/im.h"
 #include "../lib/sub.h"
 #include "../lib/inpo.h"
+#include "../lib/real.h"
+#include "../lib/inequals.h"
+#include "../nlib/log10.h"
+#include "../nlib/root.h"
+#include "../nlib/pow.h"
+#include "../nlib/cos.h"
+#include "../nlib/tan.h"
+#include "../nlib/atrigbundle.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -217,11 +224,20 @@ TEST_CASE("Hyperbolic Tangent Test", "[itanh]"){
 
 TEST_CASE("Imaginary Part Test", "[im]"){
     cout << "Hello Catch2 Build with Catch2 main()\n";
-      cout << "Running tests on the hyperbolic cosine of the complex number" << endl;
+      cout << "Running tests on the imaginary component of the complex number" << endl;
        REQUIRE(im(Complex(180,0)) == 0);
        REQUIRE(im(Complex(0,-5)) == -5);
        REQUIRE(im(Complex(3,-3)) == -3);
        REQUIRE(im(Complex(-1.5,-2.5)) == -2.5);
+}
+
+TEST_CASE("Real Part Test", "[re]"){
+    cout << "Hello Catch2 Build with Catch2 main()\n";
+      cout << "Running tests on the real component of the complex number" << endl;
+       REQUIRE(real(Complex(180,0)) == 180);
+       REQUIRE(real(Complex(0,-5)) == 0);
+       REQUIRE(real(Complex(3,-3)) == 3);
+       REQUIRE(real(Complex(-1.5,-2.5)) == -1.5);
 }
 // TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
 // {

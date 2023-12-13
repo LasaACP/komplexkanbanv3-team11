@@ -19,8 +19,18 @@
 #include "../lib/norm.h"
 #include "../lib/sin.h"
 #include "../lib/sqrt.h"
+#include "../lib/real.h"
+#include "../lib/inequals.h"
+#include "../nlib/log10.h"
+#include "../nlib/root.h"
+#include "../nlib/pow.h"
+#include "../nlib/cos.h"
+#include "../nlib/tan.h"
+#include "../nlib/atrigbundle.h"
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
+#include <string>
+using namespace std;
 
 int main () {
     std::cout << "Hello World" << std::endl;
@@ -59,11 +69,10 @@ int main () {
     std::cout << "The natural log is: " << log(z1) << "\n";
     std::cout << "The sin is: " << sin(z1) << "\n";
 
-    /* other function testing */
-    /*
+ 
     cout << "\n------ OTHER FUNCTION TESTING ------\n\n";
     cout << "The real part is: " << real(a) << "\n";
-    cout << "The imaginary part is: " << imag(a) << "\n";
+    cout << "The imaginary part is: " << im(a) << "\n";
     cout << "The log (base 10) is: " << log10(a) << "\n";
     cout << "a^b is: " << pow(a, b) << "\n";
     cout << "a^2.7 is: " << pow(a, 2.7) << "\n";
@@ -86,11 +95,10 @@ int main () {
 
     cout << "The asinh is:" << asinh(a) << "\n";
     cout << "The acosh is: " << acosh(a) << "\n";
-    cout << "Rounded to 2 decimal places: " << acosh(a).rnd(2) << "\n";
+    cout << "Rounded to 2 decimal places: " << acosh(a) << "\n";
     cout << "The atanh is: " << atanh(a) << "\n";
     cout << "The acsch is: " << acsch(a) << "\n";
     cout << "The asech is: " << asech(a) << "\n";
     cout << "The acoth is: " << acoth(a) << "\n";
     cout << "The complex number rotated by pi/6 radians is: " << rotate(a, PI/6) << "\n";
-    */
 }

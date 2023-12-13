@@ -306,4 +306,13 @@ CMakeFiles/MyProgram.dir/src/main_test.cpp.o: \
  /home/runner/KomplexKanban-V3-KrishSingh5/src/../lib/itanh.h \
  /home/runner/KomplexKanban-V3-KrishSingh5/src/../lib/im.h \
  /home/runner/KomplexKanban-V3-KrishSingh5/src/../lib/sub.h \
- /home/runner/KomplexKanban-V3-KrishSingh5/src/../lib/inpo.h
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../lib/inpo.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../lib/real.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../lib/inequals.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/log10.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/../lib/Complex.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/root.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/pow.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/cos.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/tan.h \
+ /home/runner/KomplexKanban-V3-KrishSingh5/src/../nlib/atrigbundle.h

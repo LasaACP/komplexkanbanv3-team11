@@ -2,4 +2,4 @@
 
 Complex operator+(const Complex &, const Complex &);
 Complex operator+(const Complex &, const double &);
-Complex operator+(const double &, const Complex &c1);
+Complex operator+(const double d, const Complex c1);
