@@ -16,9 +16,9 @@
 
 */
 
-
 //#define CATCH_CONFIG_RUNNER
 //#define CATCH_AMALGAMATED_CUSTOM_MAIN
+
 #include <iostream>
 #include "../tests/catch_amalgamated.hpp"
 #include "../lib/Complex.h"
@@ -49,24 +49,96 @@
 #include "../nlib/tan.h"
 #include "../nlib/atrigbundle.h"
 #include "../lib/polar.h"
+
+
+#include "../tests/catch_amalgamated.hpp"
+#include <iostream>
+
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
 
+
 int main_test( int argc, char* argv[] ) {
+
+int main(int argc, char *argv[]) {
+
   // global setup...
 
-  int result = Catch::Session().run( argc, argv );
+  int result = Catch::Session().run(argc, argv);
 
   // global clean-up...
-    cout << "Hello Catch2 Build with custom main()\n";
+  cout << "Hello Catch2 Build with custom main()\n";
 
   return result;
 }
 
-#else    //Not CATCH_AMALGAMATED_CUSTOM_MAIN
+#else  // Not CATCH_AMALGAMATED_CUSTOM_MAIN
 
 TEST_CASE("Addition Test", "[Add]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on Complex Addition" << endl;
+  double d = 3;
+  REQUIRE(Complex(1, 2) + Complex(2, 3) == Complex(3, 5));
+  REQUIRE(Complex(1, -2) + Complex(1, 2) == Complex(2, 0));
+  REQUIRE(Complex(1, 2) + Complex(-2, 3) == Complex(-1, 5));
+  REQUIRE(Complex(5, 0) + Complex(0, 2) == Complex(5, 2));
+  REQUIRE(Complex(1, 0) + Complex(1, 0) == Complex(2, 0));
+  REQUIRE(Complex(1, 0) + (d) == Complex(4, 0));
+}
+
+TEST_CASE("Subtraction Test", "[Sub]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on Subtraction" << endl;
+  double d = 3;
+  REQUIRE(Complex(1, 2) - Complex(2, 3) == Complex(-1, -1));
+  REQUIRE(Complex(1, -2) - Complex(1, 2) == Complex(0, -4));
+  REQUIRE(Complex(1, 2) - Complex(-2, 3) == Complex(3, -1));
+  REQUIRE(Complex(5, 0) - Complex(0, 2) == Complex(5, -2));
+  REQUIRE(Complex(1, 0) - Complex(1, 0) == Complex(0, 0));
+  REQUIRE(Complex(1, 1) - (d) == Complex(-2, 1));
+}
+
+TEST_CASE("Multiplication Test", "[Multi]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on Multiplication" << endl;
+  double d = 3;
+  REQUIRE(Complex(1, 2) * Complex(1, 2) == Complex(-3, 4));
+  REQUIRE(Complex(1, -2) * Complex(1, 2) == Complex(5, 0));
+  REQUIRE(Complex(5, 0) * Complex(0, 2) == Complex(0, 10));
+  REQUIRE(Complex(1, 0) * Complex(1, 0) == Complex(1, 0));
+  REQUIRE(Complex(10, -2) * Complex(5, -3) == Complex(44, -40));
+  REQUIRE(Complex(1, 0) * (d) == Complex(3, 0));
+}
+
+TEST_CASE("Division Test", "[Div]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on Division" << endl;
+  double d = 1;
+  REQUIRE(Complex(1, 2) / Complex(1, 2) == Complex(1, 0));
+  REQUIRE(Complex(1, -2) / Complex(1, 2) == Complex(-0.6, -0.8));
+  REQUIRE(Complex(5, 0) / Complex(0, 2) == Complex(0, -2.5));
+  REQUIRE(Complex(0, 8) / Complex(0, 4) == Complex(0, 2));
+  REQUIRE(Complex(1, -2) / (d) == Complex(1, -2));
+}
+
+TEST_CASE("Natural Log Test", "[log]") {
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on Natural Log" << endl;
+  REQUIRE(log(Complex(1, 2)) ==
+          Complex(0.6931471805599453, 1.6094379124341003));
+  REQUIRE(log(Complex(1, -2)) == Complex(-0.6931471805, -1.6094379124341003));
+  REQUIRE(log(Complex(5, 0)) ==
+          Complex(0.6931471805599453, 1.6094379124341003));
+  REQUIRE(log(Complex(1, 0)) ==
+          Complex(0.6931471805599453, 1.6094379124341003));
+  REQUIRE(log(Complex(-1.5, -2.5)) == Complex(0.4647095, -0.9168894));
+}
+
+/*TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
+{
+
+>>>>>>> 903275d (this is a commit)
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Complex Addition" << endl;
   double d = 3;
@@ -260,4 +332,4 @@ TEST_CASE("Real Part Test", "[re]"){
 //   REQUIRE(Factorial(5) == 1);
 // }
 // */
-#endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
+#endif // ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
